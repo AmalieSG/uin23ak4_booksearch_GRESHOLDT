@@ -1,0 +1,26 @@
+@import 'searchresults';
+@import 'bookcard';
+
+$beige: beige;
+
+body {
+  background-color: $beige;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: $beige;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: $beige;
+  padding: 20px;
+  text-align: center;
+}

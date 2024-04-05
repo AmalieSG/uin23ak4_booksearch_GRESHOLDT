@@ -17,14 +17,14 @@ export default function Bookcard({books}){
         <>
         <section>
             {books.map(book => (
-                <article key={book.key}>
+                <article className="bookcard" key={book.key}>
                     <h3>{book.title}</h3>
                     {book.first_publish_year && <p>First publish year: {book.first_publish_year}</p>}
                     {book.author_name && <p>Author/s: {book.author_name.join(', ')}</p>}
                     {book.ratings_average && <p>Average rating: {book.ratings_average}</p>}
 
-                    {/* Kilde til hvordan knapp sender bruker til en link ved trykk: https://stackoverflow.com/questions/5025941/is-there-a-way-to-get-a-button-element-to-link-to-a-location-without-wrapping */}
-                    <button onClick={() => handleAmazonSearch(book.id_amazon, book.isbn)}>Find on amazon</button>
+                    {/* Kilde til hvordan en knapp sender bruker til en link ved trykk: https://stackoverflow.com/questions/5025941/is-there-a-way-to-get-a-button-element-to-link-to-a-location-without-wrapping */}
+                    <button onClick={() => handleAmazonSearch(book.id_amazon, book.isbn)}>Click here to find on amazon</button>
                 </article>
             ))}
         </section>

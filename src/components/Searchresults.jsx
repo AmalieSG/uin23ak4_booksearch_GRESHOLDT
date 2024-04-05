@@ -20,7 +20,7 @@ export default function Searchresults({books, setQuery}) {
 
     return (
         <>
-        <form onSubmit={handleSubmit}>
+        <form className="searchresults" onSubmit={handleSubmit}>
             <input type="text" id="searchInput" placeholder="Search for a book..." value={search} onChange={handleChange} />
             <input type="submit" value="Search" />
         </form>
